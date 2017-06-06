@@ -1,7 +1,7 @@
 {
     "name": "faustbrian/smmhouse-php-client",
     "description": "A SMMHouse Client for PHP",
-    "keywords": ["api", "faustbrian", "faustbrian-smmhouse", "smmhouse", "Brian Faust", "faustbrian"],
+    "keywords": ["api", "smmhouse", "Brian Faust", "faustbrian"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
