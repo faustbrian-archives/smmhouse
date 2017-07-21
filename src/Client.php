@@ -39,7 +39,7 @@ class Client
      */
     public function api(string $name): API\AbstractAPI
     {
-        $client = Http::withBaseUri("http://api.smmhouse.com/?key={$this->key}");
+        $client = Http::withBaseUri("http://api.smmhouse.com/v2/?key={$this->key}");
 
         $class = "BrianFaust\\SMMHouse\\API\\{$name}";
 
