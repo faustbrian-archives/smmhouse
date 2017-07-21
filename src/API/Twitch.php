@@ -3,23 +3,25 @@
 /*
  * This file is part of SMMHouse PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@brianfaust.me>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\SMMHouse\Api;
+namespace BrianFaust\SMMHouse\API;
 
-class Twitch extends AbstractApi
+use BrianFaust\Http\HttpResponse;
+
+class Twitch extends AbstractAPI
 {
     /**
-     * @param $link
-     * @param $amount
+     * @param string $link
+     * @param int    $amount
      *
-     * @return mixed
+     * @return \BrianFaust\Http\HttpResponse
      */
-    public function orderViews($link, $amount)
+    public function orderViews(string $link, int $amount): HttpResponse
     {
         return $this->createOrder($link, 'Views', $amount);
     }
@@ -27,7 +29,7 @@ class Twitch extends AbstractApi
     /**
      * @return string
      */
-    public function getServiceIdentifier()
+    public function getServiceIdentifier(): string
     {
         return 'twitch';
     }
