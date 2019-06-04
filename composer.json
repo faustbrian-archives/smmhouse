@@ -1,13 +1,19 @@
 {
-    "name": "faustbrian/smmhouse-php-client",
+    "name": "plients/smmhouse",
     "description": "A SMMHouse Client for PHP",
-    "keywords": ["api", "http", "smmhouse"],
+    "keywords": [
+        "api",
+        "http",
+        "smmhouse"
+    ],
     "license": "MIT",
-    "authors": [{
-        "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
-    }],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh"
+        }
+    ],
     "require": {
         "php": "^7.1",
         "faustbrian/http": "^1.0"
@@ -18,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\SMMHouse\\": "src/"
+            "Plients\\SMMHouse\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\SMMHouse\\": "tests"
+            "Plients\\Tests\\SMMHouse\\": "tests"
         }
     },
     "config": {

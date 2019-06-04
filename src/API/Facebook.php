@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of SMMHouse PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\SMMHouse\API;
+namespace Plients\SMMHouse\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Facebook extends AbstractAPI
 {
@@ -21,7 +21,7 @@ class Facebook extends AbstractAPI
      * @param string $link
      * @param int    $amount
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function orderPageLikes(string $link, int $amount): HttpResponse
     {
@@ -32,7 +32,7 @@ class Facebook extends AbstractAPI
      * @param string $link
      * @param int    $amount
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function orderPostLikes(string $link, int $amount): HttpResponse
     {
@@ -43,7 +43,7 @@ class Facebook extends AbstractAPI
      * @param string $link
      * @param int    $amount
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function orderWebsiteLikes(string $link, int $amount): HttpResponse
     {
@@ -54,7 +54,7 @@ class Facebook extends AbstractAPI
      * @param string $link
      * @param int    $amount
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function orderSubscribers(string $link, int $amount): HttpResponse
     {
@@ -65,7 +65,7 @@ class Facebook extends AbstractAPI
      * @param string $link
      * @param int    $amount
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function orderViews(string $link, int $amount): HttpResponse
     {
@@ -76,7 +76,7 @@ class Facebook extends AbstractAPI
      * @param string $link
      * @param int    $amount
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function orderGroupJoins(string $link, int $amount): HttpResponse
     {

@@ -5,28 +5,28 @@ declare(strict_types=1);
 /*
  * This file is part of SMMHouse PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\SMMHouse\API;
+namespace Plients\SMMHouse\API;
 
-use BrianFaust\Http\HttpResponse;
-use BrianFaust\Http\PendingHttpRequest;
+use Plients\Http\HttpResponse;
+use Plients\Http\PendingHttpRequest;
 
 abstract class AbstractAPI
 {
     /**
-     * @var \BrianFaust\Http\PendingHttpRequest
+     * @var \Plients\Http\PendingHttpRequest
      */
     protected $client;
 
     /**
      * Create a new API class instance.
      *
-     * @param \BrianFaust\Http\PendingHttpRequest $client
+     * @param \Plients\Http\PendingHttpRequest $client
      */
     public function __construct(PendingHttpRequest $client)
     {
@@ -41,7 +41,7 @@ abstract class AbstractAPI
      * @param string $highRetention
      * @param int    $instagramLastLike
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function createOrder($link, $type, $amount, $country = 'WW', $highRetention = 'NO', $instagramLastLike = 0): HttpResponse
     {
@@ -59,7 +59,7 @@ abstract class AbstractAPI
     /**
      * @param int $orderId
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function getOrder(int $order_id): HttpResponse
     {
@@ -70,7 +70,7 @@ abstract class AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function getService(): HttpResponse
     {

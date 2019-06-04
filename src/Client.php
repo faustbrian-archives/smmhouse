@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of SMMHouse PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\SMMHouse;
+namespace Plients\SMMHouse;
 
-use BrianFaust\Http\Http;
+use Plients\Http\Http;
 
 class Client
 {
@@ -37,13 +37,13 @@ class Client
      *
      * @param string $name
      *
-     * @return \BrianFaust\SMMHouse\API\AbstractAPI
+     * @return \Plients\SMMHouse\API\AbstractAPI
      */
     public function api(string $name): API\AbstractAPI
     {
         $client = Http::withBaseUri("http://api.smmhouse.com/v2/?key={$this->key}");
 
-        $class = "BrianFaust\\SMMHouse\\API\\{$name}";
+        $class = "Plients\\SMMHouse\\API\\{$name}";
 
         return new $class($client);
     }
